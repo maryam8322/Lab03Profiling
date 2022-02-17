@@ -20,11 +20,11 @@ int main(int argc, char* argv[])
     for (i = 1; i < 100000000; i++)
     {
         unsigned int k = count_length(i);
-
-        if (k > init)
+        
+        if (k > count)
         {
-            init = k;
-            count = i;
+            count = k;
+            init = i;
             printf("The sequence length for the number %u equals %u \n", init, count);
         }
     }
